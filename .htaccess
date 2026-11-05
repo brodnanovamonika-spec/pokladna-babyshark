@@ -1,0 +1,7 @@
+AddType application/wasm .wasm
+AddType application/javascript .js
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|json|wasm)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
