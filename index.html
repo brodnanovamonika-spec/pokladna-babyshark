@@ -46,6 +46,24 @@
   <!-- Offline app shell: web/sw.js (filled in by tool/build_sw.py at publish time). -->
   <script>
     if ('serviceWorker' in navigator) {
+      // A new version takes over while the page runs the old one: offer a refresh instead of
+      // reloading by itself (an open sale must not be lost).
+      var hadController = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (!hadController || document.getElementById('pokladna-update')) return;
+        var bar = document.createElement('div');
+        bar.id = 'pokladna-update';
+        bar.style.cssText = 'position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:99999;' +
+          'background:#12162e;color:#fff;font:600 14px Manrope,system-ui,sans-serif;padding:10px 12px 10px 18px;' +
+          'border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.28);display:flex;align-items:center;gap:12px';
+        bar.textContent = 'Je dostupná nová verzia pokladne';
+        var btn = document.createElement('button');
+        btn.textContent = 'Obnoviť';
+        btn.style.cssText = 'border:0;border-radius:999px;background:#4776ba;color:#fff;font:700 14px inherit;padding:8px 16px;cursor:pointer';
+        btn.onclick = function () { location.reload(); };
+        bar.appendChild(btn);
+        document.body.appendChild(bar);
+      });
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('sw.js').catch(function (e) { console.warn('sw', e); });
       });
