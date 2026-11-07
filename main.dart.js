@@ -180498,11 +180498,11 @@ k=i.d
 return new A.VZ(s,r,o,n,m,l,k,k===p)},
 hw(a,b){return this.b1r(a,b)},
 ID(a){return this.hw(a,null)},
-b1r(a6,a7){var s=0,r=A.k(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5
-var $async$hw=A.l(function(a8,a9){if(a8===1)return A.h(a9,r)
-for(;;)switch(s){case 0:a5={}
-a5.a=a6
-if(a6.y!=null)a5.a=J.ayu(p.d,new A.bzN(a5),new A.bzO(a5))
+b1r(a8,a9){var s=0,r=A.k(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7
+var $async$hw=A.l(function(b0,b1){if(b0===1)return A.h(b1,r)
+for(;;)switch(s){case 0:a7={}
+a7.a=a8
+if(a8.y!=null)a7.a=J.ayu(p.d,new A.bzN(a7),new A.bzO(a7))
 o=p.c
 o.toString
 n=A.W(o,!1,t.g7)
@@ -180514,17 +180514,17 @@ o.toString
 o=A.W(o,!1,t._).a
 l=o==null?null:o.b
 if(l==null)l="?"
-k=p.my(a5.a)
+k=p.my(a7.a)
 o=k==null
-s=o&&a5.a.z?3:4
+s=o&&a7.a.z?3:4
 break
 case 3:o=p.c
 o.toString
 s=5
 return A.c(A.ja(o,"St\xf4l je zatvoren\xfd","Chcete ho otvori\u0165 a posadi\u0165 host\xed?",!1,"Otvori\u0165 st\xf4l"),$async$hw)
-case 5:if(!a9||p.c==null){s=1
+case 5:if(!b1||p.c==null){s=1
 break}o=m.cy
-j=a5.a
+j=a7.a
 s=6
 return A.c(o.a.b.d8("dining_tables",A.X(["closed",0],t.N,t.X),"id = ?",[j.a]),$async$hw)
 case 6:s=7
@@ -180533,8 +180533,12 @@ case 7:s=1
 break
 case 4:s=o?8:9
 break
-case 8:if(n.a.a===0){n.aY()
-o=a5.a
+case 8:if(n.a.a===0){i=n.Q
+h=n.at
+n.aY()
+n.Q=i
+n.at=h
+o=a7.a
 n.e=o.a
 n.f=o.b
 o=p.c
@@ -180542,33 +180546,33 @@ if(o!=null)A.a8(o,!1).aq(null)
 s=1
 break}o=m.cy
 j=n.d
-i=a5.a
-h=n.hT()
-g=n.c
+g=a7.a
+f=n.hT()
+e=n.c
 s=10
-return A.c(o.a7t(l,n.r,h,i.b,j,g,i.a),$async$hw)
-case 10:f=a9
+return A.c(o.a7t(l,n.r,f,g.b,j,e,g.a),$async$hw)
+case 10:d=b1
 j=n.Q
 s=j!=null?11:12
 break
 case 11:s=13
-return A.c(o.WJ(f,j.a,j.b),$async$hw)
+return A.c(o.WJ(d,j.a,j.b),$async$hw)
 case 13:case 12:j=n.at
 s=j!=null?14:15
 break
 case 14:s=16
-return A.c(o.WK(f,j.b,j.a),$async$hw)
+return A.c(o.WK(d,j.b,j.a),$async$hw)
 case 16:case 15:o=n.d
 s=o!=null?17:18
 break
 case 17:j=m.ay
-i=a5.a
+g=a7.a
 s=19
-return A.c(j.Un(o,o,i.a,i.b),$async$hw)
+return A.c(j.Un(o,o,g.a,g.b),$async$hw)
 case 19:case 18:n.aY()
 o=p.c
 if(o==null){s=1
-break}A.bL(o,A.t("\xda\u010det odlo\u017een\xfd na "+a5.a.b+"."))
+break}A.bL(o,A.t("\xda\u010det odlo\u017een\xfd na "+a7.a.b+"."))
 o=p.c
 o.toString
 A.a8(o,!1).aq(null)
@@ -180576,110 +180580,110 @@ s=1
 break
 case 9:o=n.a
 j=A.w(o).i("bb<2>")
-i=j.i("x.E")
-h=A.J(new A.bb(o,j),i)
-h.$flags=1
-s=h.length!==0?20:21
+g=j.i("x.E")
+f=A.J(new A.bb(o,j),g)
+f.$flags=1
+s=f.length!==0?20:21
 break
-case 20:h=p.c
-h.toString
-g=a5.a.b
+case 20:f=p.c
+f.toString
+e=a7.a.b
 s=22
-return A.c(A.ja(h,"Prida\u0165 \xfa\u010det k stolu "+g+"?","Polo\u017eky z aktu\xe1lneho \xfa\u010dtu sa pridaj\xfa k \xfa\u010dtu stola "+g+".",!1,"Prida\u0165"),$async$hw)
-case 22:if(!a9||p.c==null){s=1
-break}h=m.cy
+return A.c(A.ja(f,"Prida\u0165 \xfa\u010det k stolu "+e+"?","Polo\u017eky z aktu\xe1lneho \xfa\u010dtu sa pridaj\xfa k \xfa\u010dtu stola "+e+".",!1,"Prida\u0165"),$async$hw)
+case 22:if(!b1||p.c==null){s=1
+break}f=m.cy
 s=23
-return A.c(h.xK(a5.a.a),$async$hw)
-case 23:e=a9
-if(e==null)e=k
-d=new A.iv(A.y(t.N,t.gc),$.a3())
-d.v0(e.w,e.r,p.f,p.r)
-o=A.J(new A.bb(o,j),i)
+return A.c(f.xK(a7.a.a),$async$hw)
+case 23:c=b1
+if(c==null)c=k
+b=new A.iv(A.y(t.N,t.gc),$.a3())
+b.v0(c.w,c.r,p.f,p.r)
+o=A.J(new A.bb(o,j),g)
 o.$flags=1
 o=o
 j=o.length
-c=0
-for(;c<j;++c)d.a1E(o[c])
+a=0
+for(;a<j;++a)b.a1E(o[a])
 o=n.c
-if(o>d.c)d.yj(o)
-o=e.a
-j=a5.a
+if(o>b.c)b.yj(o)
+o=c.a
+j=a7.a
 s=24
-return A.c(h.Wt(l,d.hT(),j.b,o,d.c,j.a),$async$hw)
-case 24:b=n.d
-s=b!=null&&b!==o?25:26
+return A.c(f.Wt(l,b.hT(),j.b,o,b.c,j.a),$async$hw)
+case 24:a0=n.d
+s=a0!=null&&a0!==o?25:26
 break
 case 25:j=m.ay
-i=a5.a
+g=a7.a
 s=27
-return A.c(j.Un(b,o,i.a,i.b),$async$hw)
+return A.c(j.Un(a0,o,g.a,g.b),$async$hw)
 case 27:s=28
-return A.c(h.A_(b),$async$hw)
+return A.c(f.A_(a0),$async$hw)
 case 28:case 26:o=m.fr
 j=n.f
 if(j.length===0)j="\xfa\u010det"
 s=29
-return A.c(o.eC(l,"spojenie stolov",j+" do "+a5.a.b),$async$hw)
+return A.c(o.eC(l,"spojenie stolov",j+" do "+a7.a.b),$async$hw)
 case 29:n.aY()
 o=p.c
 if(o==null){s=1
-break}A.bL(o,A.t("Pridan\xe9 k \xfa\u010dtu stola "+a5.a.b+"."))
+break}A.bL(o,A.t("Pridan\xe9 k \xfa\u010dtu stola "+a7.a.b+"."))
 o=p.c
 o.toString
 A.a8(o,!1).aq(null)
 s=1
 break
-case 21:s=a7==="pay"?30:32
+case 21:s=a9==="pay"?30:32
 break
-case 30:a="pay"
+case 30:a1="pay"
 s=31
 break
-case 32:h=p.c
-h.toString
+case 32:f=p.c
+f.toString
 s=33
-return A.c(A.ze(B.aa,new A.bzP(a5,p,k,a7),B.vG,h,!0,t.N),$async$hw)
-case 33:a=a9
+return A.c(A.ze(B.aa,new A.bzP(a7,p,k,a9),B.vG,f,!0,t.N),$async$hw)
+case 33:a1=b1
 case 31:if(p.c==null){s=1
 break}s=34
 return A.c(p.fT(),$async$hw)
-case 34:if(a==null){s=1
-break}h=m.cy
+case 34:if(a1==null){s=1
+break}f=m.cy
 s=35
-return A.c(h.xK(a5.a.a),$async$hw)
-case 35:a0=a9
-if(a0==null||p.c==null){s=1
-break}g=a0.a
+return A.c(f.xK(a7.a.a),$async$hw)
+case 35:a2=b1
+if(a2==null||p.c==null){s=1
+break}e=a2.a
 s=36
-return A.c(h.bek(g,l),$async$hw)
-case 36:a1=a9
+return A.c(f.bek(e,l),$async$hw)
+case 36:a3=b1
 if(p.c==null){s=1
-break}s=a1!=null&&a1.a4M(l)?37:38
+break}s=a3!=null&&a3.a4M(l)?37:38
 break
-case 37:a2=p.c
-a2.toString
+case 37:a4=p.c
+a4.toString
 s=39
-return A.c(A.ja(a2,"\xda\u010det je otvoren\xfd na inej pokladni",A.t("St\xf4l")+" "+a5.a.b+": "+A.t("m\xe1 ho otvoren\xfd")+" "+a1.Q+". "+A.t("Prevzia\u0165 \xfa\u010det?"),!1,"Prevzia\u0165"),$async$hw)
-case 39:if(!a9||p.c==null){s=1
+return A.c(A.ja(a4,"\xda\u010det je otvoren\xfd na inej pokladni",A.t("St\xf4l")+" "+a7.a.b+": "+A.t("m\xe1 ho otvoren\xfd")+" "+a3.Q+". "+A.t("Prevzia\u0165 \xfa\u010det?"),!1,"Prevzia\u0165"),$async$hw)
+case 39:if(!b1||p.c==null){s=1
 break}s=40
-return A.c(h.EM(g,l,!0),$async$hw)
+return A.c(f.EM(e,l,!0),$async$hw)
 case 40:if(p.c==null){s=1
-break}case 38:o=A.J(new A.bb(o,j),i)
+break}case 38:o=A.J(new A.bb(o,j),g)
 o.$flags=1
-a3=o
-o=a3.length
+a5=o
+o=a5.length
 s=o!==0?41:42
 break
 case 41:j=p.c
 j.toString
 s=43
-return A.c(A.ja(j,"Prida\u0165 k \xfa\u010dtu stola "+a5.a.b+"?",u.cO,!1,"Prida\u0165"),$async$hw)
-case 43:if(!a9||p.c==null){s=1
-break}case 42:n.Uh(a0,p.f,p.r,a5.a.b)
+return A.c(A.ja(j,"Prida\u0165 k \xfa\u010dtu stola "+a7.a.b+"?",u.cO,!1,"Prida\u0165"),$async$hw)
+case 43:if(!b1||p.c==null){s=1
+break}case 42:n.Uh(a2,p.f,p.r,a7.a.b)
 s=44
-return A.c(n.Fe(m.x,a0),$async$hw)
-case 44:for(c=0;c<o;++c){a4=a3[c]
-n.b4x(0,a4.a,a4.d,a4.c)}o=p.c
-if(o!=null)A.a8(o,!1).aq(a)
+return A.c(n.Fe(m.x,a2),$async$hw)
+case 44:for(a=0;a<o;++a){a6=a5[a]
+n.b4x(0,a6.a,a6.d,a6.c)}o=p.c
+if(o!=null)A.a8(o,!1).aq(a1)
 case 1:return A.i(q,r)}})
 return A.j($async$hw,r)},
 Dn(a,b){return this.aXM(a,b)},
